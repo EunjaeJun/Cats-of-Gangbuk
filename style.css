@@ -17,6 +17,9 @@ ul {
   margin: 0;
   padding: 20px;
 }
+#active {
+  color: red;
+}
 h2 {
   margin-top: 0;
 }
