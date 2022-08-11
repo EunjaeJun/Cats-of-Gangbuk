@@ -4,27 +4,79 @@
   <title>보통의 꼬리, 보리</title>
   <meta charset="utf-8">
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L8LXSDQT3X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8LXSDQT3X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-L8LXSDQT3X');
-</script>
+    gtag('config', 'G-L8LXSDQT3X');
+  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+    a {
+      color: black; text-decoration: none;
+    }
+    #active {
+      color: red;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 50px;
+    }
+    ul {
+      text-decoration: underline;
+      border-right: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ul {
+      padding: 33px;
+    }
+    #grid #article {
+      padding: 25px
+    }
+    /* screen width < 600px */
+    @media(max-width: 600px){
+      #grid {
+        display: block;
+      }
+      ul {
+        border-right: none;
+        border-bottom: 1px solid gray;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">미아동 고양이들</a></h1>
-  <ul>
-    <li><a href="1-1.html">깜코</a></li>
-    <li><a href="2-1.html">핑코</a></li>
-    <li><a href="3-1.html">보리</a></li>
-  </ul>
-  <h2>보리</h2>
-  <p>
-    보리는 보통의 꼬리를 가진 턱시도 고양이이다. <br> 보리는 깜코, 핑코, 보리 가족 중에서 깜코보다는 어리지만 핑코보다는 나이가 많은 것으로 추정된다. <br> 보리는 중성화 수술이 되지 않은 수컷 고양이이다. <br> 보리는 가족 구성원 중에서 활동 반경이 가장 넓다. 그래서 보리는 식사 시간, 취침 시간 외의 시간은 대부분 외출 중이다. <br> 보리는 모든 간식을 가리지 않고 좋아한다. <br> 정말 귀여운 고양이이다.
-  </p>
-<img src="bori.jpg" width="80%"">
+  <div id="grid">
+    <ul>
+      <li><a href="1-1.html">깜코</a></li>
+      <li><a href="2-1.html">핑코</a></li>
+      <li><a href="3-1.html" id="active">보리</a></li>
+    </ul>
+    <div id="article">
+      <h2>보리</h2>
+      <p>
+        보리는 보통의 꼬리를 가진 턱시도 고양이이다. <br> 보리는 깜코, 핑코, 보리 가족 중에서 깜코보다는 어리지만 핑코보다는 나이가 많은 것으로 추정된다. <br> 보리는 중성화 수술이 되지 않은 수컷 고양이이다. <br> 보리는 가족 구성원 중에서 활동 반경이 가장 넓다. 그래서 보리는 식사 시간, 취침 시간 외의 시간은 대부분 외출 중이다. <br> 보리는 모든 간식을 가리지 않고 좋아한다. <br> 정말 귀여운 고양이이다.
+      </p>
+      <img src="bori.jpg" width="80%"">
+    </div>
+  </div>
+
 <div id="disqus_thread"></div>
 <script>
     /**
